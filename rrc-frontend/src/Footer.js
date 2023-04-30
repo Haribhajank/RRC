@@ -6,12 +6,12 @@ import ReactDOM from 'react-dom/client';
 function Footer() {
     return (
         <>
-            <div className='flex flex-col bg-black'>
-                <div className='grid grid-cols-2  ml-72 my-8'>
+            <div className='flex flex-col bg-black flex-wrap px-4'>
+                <div className='grid grid-cols-2  lg:ml-72 my-8'>
                     <div className=''><img src={require('./images/full logo (1) 2 (Traced).png')}></img></div>
-                    <div className='ml-44'><img src={require('./images/IITG_White 1.png')}></img></div>
+                    <div className='lg:ml-44'><img src={require('./images/IITG_White 1.png')}></img></div>
                 </div>
-                <div className='grid grid-cols-3 gap-0 ml-72 text-white'>
+                <div className='grid grid-cols-3 gap-0 lg:ml-72 text-white'>
                     <div className='flex-cols'>
                         <div className='mb-10'>Contact Us</div>
                         <div>
@@ -40,7 +40,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center align-center mx-60 my-8 text-white'>©2023 Robotics Club.All Rights Reserved</div>
+                <div className='flex justify-center align-center lg:mx-60 my-8 text-white'>©2023 Robotics Club.All Rights Reserved</div>
             </div>
         </>
     )

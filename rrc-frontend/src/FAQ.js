@@ -4,7 +4,7 @@ import './index.css';
 function FAQs() {
     return (
         <>
-            <div className=' p-10 flex flex-col justify-center align-center mx-60  h-screen  flex-wrap'>
+            <div className='p-5 w-auto flex flex-col justify-center align-center mt-40 mb-60 lg:px-60  flex-wrap'>
                 <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Frequently Asked Question</div>
                 <div className='px-20'>                    
                     <div id="accordion-collapse" data-accordion="collapse">

@@ -5,7 +5,7 @@ import './index.css';
 function Instruction() {
     return (
         <>
-            <div className='flex flex-col justify-center align-center mx-60 my-28 h-screen flex-wrap' >
+            <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20  flex-wrap' >
                 <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Instructions</div>
                 <div className='px-20'><b>1.Each team should submit a video </b>(Maximum 25 points):
                     <br></br>The video simulation should be 10 minutes long.

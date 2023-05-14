@@ -8,14 +8,14 @@ function Contact () {
     return(
         <>
             <Nav />
-            <div className='head lg:grid lg:grid-cols-2 flex justify-center flex-wrap '>
+            <div className='head lg:grid lg:grid-cols-2 flex justify-center flex-wrap overflow-hidden md:py-16'>
                 <div className='my-10 ml-20 '>
                     <div className='flex flex-wrap  align-center text-6xl mt-20 pr-24 font-black '>CONTACT US</div>
                     <div className='mt-5'>For any issues and quarries, contact us</div> 
                 </div>
-                <div className='lg:flex-1  mt-0 '>
-                    <div>
-                    <img className='max-w-xs ' src={require('../images/RRC logo 2 (1).png')}></img>
+                <div className='lg:flex-1  mt-0 relative'>
+                    <div className='logo-contact-page'>
+                    <img className='max-w-s ' src={require('../images/RRC logo 2 (1).png')}></img>
                     </div>
                 </div>
             </div>

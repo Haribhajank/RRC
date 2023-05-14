@@ -19,8 +19,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8 lg:py-0" aria-label="Global">
@@ -65,10 +64,10 @@ export default function Example() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Robotics
           </a>
-          <Link to="team"><a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="team" ><a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Team
           </a></Link>
-          <Link to="contact"><a  href="#" className="visited:bg-violet-700 text-sm font-semibold leading-6 text-gray-900">
+          <Link to="contact"><a  href="#" className="visited:bg-violet-700 text-sm font-semibold leading-6 text-gray-900" >
             Contact Us
           </a></Link>
         </Popover.Group>

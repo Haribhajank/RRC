@@ -12,7 +12,7 @@ import Contact from '../src/Pages/Contact';
 import Nav from '../src/Components/Nav';
 import Footer from '../src/Components/Footer';
 
-function App () {
+function App () { 
   return (
     <BrowserRouter>
       <Routes>

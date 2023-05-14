@@ -21,25 +21,6 @@
     background-color: hwb(5 32% 24%);
 }
 
-.im {
-    transform: rotate(45deg);
-    position: static;
-    right: 0.5%;
-    bottom: 40%;
-}
-
-@media (max-width: 1103px) {
-    .im {
-        position: static;
-        transform: rotate(0);
-        width: 60%;
-    }
-}
-
-.cm {
-    position: relative;
-    z-index: 1;
-}
 
 .h-100:hover {
     opacity: 100;
@@ -52,3 +33,12 @@
     right: -50%;
     width: 110%;
 }
+
+.logo-form-page {
+    transform: rotate(-25deg);
+    position: absolute;
+    top: -2%;
+    right: -50%;
+    width: 110%;
+}
+

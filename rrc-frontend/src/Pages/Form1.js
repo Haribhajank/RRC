@@ -25,22 +25,25 @@ function Form1 () {
     return (
         <>
         <Nav />
+        <div className='flex mx-auto my-40 px-auto py-36 justify-center align-center text-6xl'>
+            Registrations Starting Soon....
+        </div>
         {/* Header */}
-        <div className='head lg:grid lg:grid-cols-2 flex justify-center flex-wrap '>
+        {/* <div className='head lg:grid lg:grid-cols-2 flex justify-center lg:overflow-hidden flex-wrap '>
             <div className='my-10 ml-20'>
                 <div className='flex flex-wrap justify-center align-center text-4xl mt-20 pr-24 font-black'>TAKE PART IN THE CHALLENGE AND COMPETE WITH STUDENTS FROM OTHER SCHOOLS</div>
                 <div className='mt-5'>The main problem that needs to be addressed in designing a best-out-of-waste project is to create a product that is functional, aesthetically pleasing, and eco-friendly. The design should be innovative and cost-effective and use readily available waste materials.</div> 
             </div>
-            <div className='lg:flex-1 lg:ml-20 px-10 mt-0'>
-                <div>
-                <img className='im max-w-xs mr-0' src={require('../images/Rectangle 7.png')}></img>
+            <div className='lg:flex-1  mt-0 relative'>
+                <div className='lg:logo-form-page'>
+                <img className='max-w-s ' src={require('../images/Rectangle 7.png')}></img>
                 </div>
             </div>
-        </div>
+        </div> */}
 
 
         {/* Form */}
-        <div className='my-10 py-10'>
+        {/* <div className='my-10 py-10 '>
             <div className='lg:mx-72 mx-24 justify-center align-center'>
                 <form>
                     {inputFields.map((input,index) => {
@@ -101,7 +104,7 @@ function Form1 () {
                     <Link to="/form2"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Next </button></Link>
                 </div>
             </div>
-        </div>
+        </div> */}
         <Footer2 />
         </>
     )

@@ -10,7 +10,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import './index.css';
+import '../index.css';
+import { Link } from 'react-router-dom';
 
 
 function classNames(...classes) {
@@ -25,12 +26,12 @@ export default function Example() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8 lg:py-0" aria-label="Global">
         <div className="flex-none mr-2">
           <a href="#" className="-m-1">
-            <img className="h-8 w-auto" src={require('./images/RRC logo 2.png')} alt="" />
+            <img className="h-8 w-auto" src={require('../images/RRC logo 2.png')} alt="" />
           </a>
         </div>
         <div className="flex-auto">
           <a href="#" className="-m-0.5">
-            <img className="h-8 w-auto" src={require('./images/RRC.png')} alt="" />
+            <img className="h-8 w-auto" src={require('../images/RRC.png')} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -64,12 +65,12 @@ export default function Example() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Robotics
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="team"><a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Team
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </a></Link>
+          <Link to="contact"><a  href="#" className="visited:bg-violet-700 text-sm font-semibold leading-6 text-gray-900">
             Contact Us
-          </a>
+          </a></Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button>
@@ -83,7 +84,7 @@ export default function Example() {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src={require('./images/RRC logo 2.png')}
+                src={require('../images/RRC logo 2.png')}
                 alt=""
               />
             </a>

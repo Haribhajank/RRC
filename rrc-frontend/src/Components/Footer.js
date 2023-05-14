@@ -11,7 +11,7 @@ function Footer() {
                     <div className=''><img src={require('../images/full logo (1) 2 (Traced).png')}></img></div>
                     <div className='mx-10 lg:ml-44'><img src={require('../images/IITG_White 1.png')}></img></div>
                 </div>
-                <div className='grid grid-cols-3 gap-0 lg:ml-72 text-white'>
+                <div className='grid md:grid-cols-3 gap-0 lg:ml-72 text-white justify-center'>
                     <div className='flex-cols'>
                         <div className='mb-10'>Contact Us</div>
                         <div>

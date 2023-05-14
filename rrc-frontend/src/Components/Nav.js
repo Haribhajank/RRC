@@ -19,8 +19,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8 lg:py-0" aria-label="Global">

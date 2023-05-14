@@ -17,7 +17,7 @@ function Team () {
                     </div>
                     <div className='lg:flex-1  mt-0 lg:ml-72'>
                         <div>
-                        <img className='my-10 max-w-xs' src={require('../images/only  logo (1) 2 (Traced).png')}></img>
+                        <img className='my-10 max-w-xs lg:block hidden' src={require('../images/only  logo (1) 2 (Traced).png')}></img>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import '../index.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 function classNames(...classes) {
@@ -58,19 +58,12 @@ export default function Example() {
             >
 
             </Transition>
-          </Popover>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            About
-          </a>            
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Robotics
-          </a>
-          <Link to="team"><a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Team
-          </a></Link>
-          <Link to="contact"><a  href="#" className="visited:bg-violet-700 text-sm font-semibold leading-6 text-gray-900">
-            Contact Us
-          </a></Link>
+          </Popover>           
+          <NavLink to="#" style={isActive => ({backgroundColor: isActive ? "green" : 'white'})} className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
+          <NavLink to="#" className="text-sm font-semibold leading-6 text-gray-900">Robotics</NavLink>
+          <NavLink to="team" className="text-sm font-semibold leading-6 text-gray-900">Team</NavLink>
+          <NavLink to="contact" style={isActive => ({backgroundColor: isActive ? "green" : "blue"})} className="text-sm font-semibold leading-6 text-gray-900">Contact Us</NavLink>
+          <NavLink></NavLink>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button>

@@ -58,10 +58,10 @@ export default function Example() {
 
             </Transition>
           </Popover>           
-          <NavLink to="#" style={isActive => ({backgroundColor: isActive ? "green" : 'white'})} className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
+          <NavLink to="#" className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
           <NavLink to="#" className="text-sm font-semibold leading-6 text-gray-900">Robotics</NavLink>
           <NavLink to="team" className="text-sm font-semibold leading-6 text-gray-900">Team</NavLink>
-          <NavLink to="contact" style={isActive => ({backgroundColor: isActive ? "green" : "blue"})} className="text-sm font-semibold leading-6 text-gray-900">Contact Us</NavLink>
+          <NavLink to="contact" className="text-sm font-semibold leading-6 text-gray-900">Contact Us</NavLink>
           <NavLink></NavLink>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -105,13 +105,13 @@ export default function Example() {
                   Robotics
                 </a>
                 <a
-                  href="#"
+                  href="team"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Team
                 </a>
                 <a
-                  href="#"
+                  href="contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us

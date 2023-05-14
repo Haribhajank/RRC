@@ -29,18 +29,26 @@
 }
 
 @media (max-width: 1103px) {
-    .im{
+    .im {
         position: static;
         transform: rotate(0);
         width: 60%;
     }
 }
 
-.cm{
+.cm {
     position: relative;
     z-index: 1;
 }
 
 .h-100:hover {
     opacity: 100;
+}
+
+.logo-contact-page {
+    transform: rotate(45deg);
+    position: absolute;
+    top: -2%;
+    right: -50%;
+    width: 110%;
 }

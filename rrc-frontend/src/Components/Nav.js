@@ -58,14 +58,13 @@ export default function Example() {
 
             </Transition>
           </Popover>           
-          <NavLink to="#" className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
-          <NavLink to="#" className="text-sm font-semibold leading-6 text-gray-900">Robotics</NavLink>
-          <NavLink to="team" className="text-sm font-semibold leading-6 text-gray-900">Team</NavLink>
+          <NavLink to="/" className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
+          <NavLink to="team" className="text-sm font-semibold leading-6 text-gray-900">Robotics Club</NavLink>
           <NavLink to="contact" className="text-sm font-semibold leading-6 text-gray-900">Contact Us</NavLink>
           <NavLink></NavLink>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button>
+        <Link to="/form1"><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button></Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -93,23 +92,23 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
               <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="team"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Robotics
+                  Robotics Club
                 </a>
-                <a
+                {/* <a
                   href="team"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Team
-                </a>
+                </a> */}
                 <a
                   href="contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"

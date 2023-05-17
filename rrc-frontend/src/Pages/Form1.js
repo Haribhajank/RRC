@@ -25,7 +25,7 @@ function Form1 () {
     return (
         <>
         <Nav />
-        <div className='flex mx-auto my-40 px-auto py-36 justify-center align-center text-6xl'>
+        <div className='flex mx-16 md:my-40 lg:my-40 px-auto py-36 justify-center align-center lg:text-6xl md:text-6xl text-4xl'>
             Registrations Starting Soon....
         </div>
         {/* Header */}

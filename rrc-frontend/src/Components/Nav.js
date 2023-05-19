@@ -43,7 +43,7 @@ export default function Example() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="hidden lg:flex lg:gap-x-6">
           <Popover className="relative">
 
             <Transition
@@ -58,10 +58,9 @@ export default function Example() {
 
             </Transition>
           </Popover>           
-          <NavLink to="/" className="text-sm font-semibold leading-6 text-gray-900">About</NavLink>
-          <NavLink to="team" className="text-sm font-semibold leading-6 text-gray-900">Robotics Club</NavLink>
-          <NavLink to="contact" className="text-sm font-semibold leading-6 text-gray-900">Contact Us</NavLink>
-          <NavLink></NavLink>
+          <a className="px-4 py-1.5 hover:text-white hover:bg-green-400 rounded-full" href="/" >About</a>
+          <a href="team" className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Robotics Club</a>
+          <a href="contact" className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Contact Us</a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <Link to="/form1"><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button></Link>

@@ -16,7 +16,7 @@ function Hero() {
                 <div className='lg:flex-1 lg:mr-20 lg:mt-20 justify-center align-center  px-10'>
                     <img className='' src={require('../images/RECYCLOTRON ROBOTICS CHALLENGE.png')}></img>
                     <p className='mt-10 w-3/4'>Test your taste in technology by designing and making a robot from scrap, and push your limits to make something truly ground breaking.</p>
-                    <Link to="/form1"><button className="mt-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button></Link>
+                    <Link to="/form1"><button className="mt-8 bg-transparent text-blue-700 hover:text-white hover:bg-blue-500 border border-blue-500 hover:border-transparent rounded font-bold py-2 px-4 rounded">Register Now!</button></Link>
                 </div>
             </div>
 
@@ -147,13 +147,13 @@ function Hero() {
                     </div>
                     <div className='bg-gradient-to-r from-blue-200 to-green-200 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
                         <div className='text-2xl '>2nd Prize</div>
-                        <div className=''><img className='my-4 max-w-md h-80 w-72' src={require("../images/image-removebg-preview (2).png")}></img></div>
+                        <div className=''><img className='my-4 max-w-md h-80 w-72 px-10 opacity-80' src={require("../images/image-removebg-preview (2).png")}></img></div>
                         <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                     </div>
                     <div className='bg-gradient-to-r from-green-200 to-green-500 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
                         <div className='text-2xl '>3rd Prize</div>
-                        <div><img className='my-4 max-w-md h-80 w-80' src={require("../images/image 103.png")}></img></div>
-                        <div>Have a chance to get win alaxa dot</div>
+                        <div><img className='my-4 max-w-md h-80 w-80 py-10 px-4 opacity-60' src={require("../images/image 103.png")}></img></div>
+                        <div>Have a chance to get win Alexa dot</div>
                     </div>
                 </div>
 

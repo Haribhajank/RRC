@@ -36,8 +36,8 @@ function Team () {
                             <Link to='https://instagram.com/roboclubiitg?igshid=NTc4MTIwNjQ2YQ=='><img className='max-w-xs w-10 h-10' src={require('../images/instagram.png')}></img></Link>
                             {/* <Link to=''><img className='max-w-xs w-10 h-10' src={require('../images/facebook.png')}></img></Link> */}
                             <Link to='https://www.linkedin.com/company/robotics-club-iitg/'><img className='max-w-xs w-10 h-10' src={require('../images/linkedin.png')}></img></Link>
-                            <Link to='https://instagram.com/roboclubiitg?igshid=NTc4MTIwNjQ2YQ=='><img className='max-w-xs w-10 h-10' src={require('../images/youtube.png')}></img></Link>
-                            <Link to='https://www.linkedin.com/company/robotics-club-iitg/'><img className='max-w-xs w-10 h-10' src={require('../images/discord.png')}></img></Link>
+                            <Link to='https://www.youtube.com/@RCIITG'><img className='max-w-xs w-10 h-10' src={require('../images/youtube.png')}></img></Link>
+                            <Link to='https://discord.gg/ts4HDaPyMF'><img className='max-w-xs w-10 h-10' src={require('../images/discord.png')}></img></Link>
                             </div>
                         </div>
                         <div>

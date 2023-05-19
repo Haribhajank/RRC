@@ -24,10 +24,10 @@ function Footer() {
                     <div className='flex-cols'>
                         <div className='mb-4'>Stay Connected</div>
                         <div className='mb-8'>
-                            <div><a href='https://www.youtube.com/@RCIITG'>Instagram</a></div>
-                            <div><a href='https://www.youtube.com/@RCIITG'>Linkedin</a></div>
+                            <div><a href='https://instagram.com/roboclubiitg?igshid=NTc4MTIwNjQ2YQ=='>Instagram</a></div>
+                            <div><a href='https://www.linkedin.com/company/robotics-club-iitg/'>Linkedin</a></div>
                             <div><a href='https://www.youtube.com/@RCIITG'>Youtube</a></div>
-                            <div><a href='https://discord.gg/DC4fX5fu'>Discord</a></div>
+                            <div><a href='https://discord.gg/ts4HDaPyMF'>Discord</a></div>
                             {/* <div><a href='#'>Facebook</a></div> */}
 
                         </div>
@@ -42,7 +42,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center align-center lg:mx-60 my-8 text-white'>©2023 Robotics Club.All Rights Reserved</div>
+                <div className='flex justify-center align-center lg:mx-60 my-8 text-white'>© {new Date().getFullYear()} Robotics Club.All Rights Reserved</div>
             </div>
         </>
     )

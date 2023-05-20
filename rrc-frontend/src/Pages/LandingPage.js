@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 function Hero() {
     return (
         <>
-         <Nav />
-         {/* Head Image */}
+            <Nav />
+            {/* Head Image */}
             <div className='flex justify-center flex-wrap my-10'>
                 <div className='lg:ml-40 mt-10  justify-center ml-20'>
-                    <img className='h-3/4  mr-0 lg:hover:animate-pulse'  src={require('../images/Abstraction.png')}></img>
+                    <img className='h-3/4  mr-0 lg:hover:animate-pulse' src={require('../images/Abstraction.png')}></img>
                 </div>
                 <div className='lg:flex-1 lg:mr-20 lg:mt-20 justify-center align-center  px-10'>
                     <img className='' src={require('../images/RECYCLOTRON ROBOTICS CHALLENGE.png')}></img>
@@ -62,7 +62,7 @@ function Hero() {
                     </div>
                 </div>
             </div>
-   
+
 
 
 
@@ -80,33 +80,33 @@ function Hero() {
                     </div>
                 </div>
                 <div className='bg-black text-white overflow-y-scroll'>
-                        <div className='px-10 py-10'>
+                    <div className='px-10 py-10'>
                         <img className='mx-10 lg:ml-72 px-10' src={require('../images/processing 1.png')}></img></div>
-                        <div className='mx-24 text-2xl mt-10 font-black'>Material Selection:</div>
-                        <div className='mt-5 mx-24'>IIT Guwahati students will be judging your projects. There are a lot   of prizes and exciting things to wins from this competition, so give your best to win this</div>
-                    
-                        <div className='px-10 py-10'>
+                    <div className='mx-24 text-2xl mt-10 font-black'>Material Selection:</div>
+                    <div className='mt-5 mx-24'>IIT Guwahati students will be judging your projects. There are a lot   of prizes and exciting things to wins from this competition, so give your best to win this</div>
+
+                    <div className='px-10 py-10'>
                         <img className='mx-10 lg:ml-72 px-10' src={require('../images/logo-design 1.png')}></img></div>
-                        <div className='mx-24 text-2xl mt-10 font-black'>Design</div>
-                        <div className='mt-5 mx-24'>Developing an innovative design that meets the intended purpose of the product, looks visually appealing, and utilizes the chosen waste materials.</div>
- 
-                        <div className='px-10 py-10'>
+                    <div className='mx-24 text-2xl mt-10 font-black'>Design</div>
+                    <div className='mt-5 mx-24'>Developing an innovative design that meets the intended purpose of the product, looks visually appealing, and utilizes the chosen waste materials.</div>
+
+                    <div className='px-10 py-10'>
                         <img className='mx-10 lg:ml-72 px-10' src={require('../images/mechanical 1.png')}></img></div>
-                        <div className='mx-24 text-2xl mt-10 font-black'>Functionality</div>
-                        <div className='mt-5 mx-24'>Ensuring that the product is functional and serves its intended purpose.</div>
- 
-                        <div className='px-10 py-10'>
+                    <div className='mx-24 text-2xl mt-10 font-black'>Functionality</div>
+                    <div className='mt-5 mx-24'>Ensuring that the product is functional and serves its intended purpose.</div>
+
+                    <div className='px-10 py-10'>
                         <img className='mx-10 lg:ml-72 px-10' src={require('../images/sustainability 1.png')}></img></div>
-                        <div className='mx-24 text-2xl mt-10 font-black'>Sustainability</div>
-                        <div className='mt-5 mx-24'>Ensuring the product is eco-friendly and has a minimal environmental impact. This can include reducing waste, using renewable resources, and minimizing the use of harmful chemicals</div>
- 
-                        <div className='px-10 py-10'>
+                    <div className='mx-24 text-2xl mt-10 font-black'>Sustainability</div>
+                    <div className='mt-5 mx-24'>Ensuring the product is eco-friendly and has a minimal environmental impact. This can include reducing waste, using renewable resources, and minimizing the use of harmful chemicals</div>
+
+                    <div className='px-10 py-10'>
                         <img className='mx-10 lg:ml-72 px-10' src={require('../images/budget 1.png')}></img></div>
-                        <div className='mx-24 text-2xl mt-10 font-black'>Cost-Effectiveness</div>
-                        <div className='mt-5 mx-24 mb-10'>Ensuring that the product is affordable and can be produced cost-effectively.</div>
- 
-                    </div>
+                    <div className='mx-24 text-2xl mt-10 font-black'>Cost-Effectiveness</div>
+                    <div className='mt-5 mx-24 mb-10'>Ensuring that the product is affordable and can be produced cost-effectively.</div>
+
                 </div>
+            </div>
 
 
 
@@ -128,7 +128,7 @@ function Hero() {
 
                     <b>3.Use of waste materials</b> (maximum 10 points): The project should effectively utilize waste materials in a creative and eco-friendly way, reducing waste and promoting sustainability.<br></br><br></br>
 
-                    <b>4.Creativity and uniqueness</b> (maximum 20 points): The project should demonstrate creativity and uniqueness using waste materials, design, and functionality.</div>                
+                    <b>4.Creativity and uniqueness</b> (maximum 20 points): The project should demonstrate creativity and uniqueness using waste materials, design, and functionality.</div>
             </div>
 
 
@@ -158,32 +158,29 @@ function Hero() {
                 </div> */}
 
                 <div className='lg:mx-auto mx-16 max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
-                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 opacity-50 hover:opacity-100'>
+                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 flex flex-col  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 opacity-50 hover:opacity-100'>
                         <div className='text-2xl mb-4'>1st Prize</div>
-                        <div><img className='my-2 max-w-md h-60 w-60' src={require('../images/image 95.png')}></img></div>
+                        <div><img className='my-2' src={require('../images/image 95.png')}></img></div>
                         <div>The winner of the competition will be awarded with a macbook</div>
                     </div>
                     <div className='md:grid md:col-span-3 md:row-2 lg:grid lg:col-span-3 lg:row-2 '>
                         <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-3 gap-4'>
                             <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>2nd Prize</div>
-                                <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80' src={require("../images/image-removebg-preview (2).png")}></img></div>
+                                <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80 object-contain' src={require("../images/image-removebg-preview (2).png")}></img></div>
                                 <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                             </div>
                             <div className='flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3 opacity-50 hover:opacity-100'>
-                                 <div className='text-2xl mb-4'>3rd Prize</div>
-                                 <div><img className='my-0 max-w-md h-52 w-60 py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
+                                <div className='text-2xl mb-4'>3rd Prize</div>
+                                <div><img className='my-0  py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
                                 <div>Have a chance to win Alexa dot</div>
                             </div>
                             <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>Participant</div>
-                                <div>
-                                <ul>
-                                    <li>&bull; Participation certificates from iitg robotics club.</li>
-                                     <li>&bull; Free bootcamp course of robotics club worth 200 Rs.</li>
-                                     <li>&bull; Commercial Grade License from ALTAIR.</li>
-                                     <li>&bull; Free 3 month subscription of THE HINDU e-paper worth 249/month.</li>
-                                </ul>
+                                <div>Participation certificates from iitg robotics club.<br></br>
+                                    Free bootcamp course of robotics club worth 200 Rs.<br></br>
+                                    Commercial Grade License from XXX<br></br>
+                                    Fee 3 month subscription of XXX e-paper worth 249/month.
                                 </div>
                             </div>
                         </div>
@@ -213,11 +210,11 @@ function Hero() {
                     </div> */}
                 </div>
                 <div className='flex mx-20 flex-wrap justify-center align-center  gap-20 mx-auto mb-20'>
-                    <div><img className='max-w-xs w-64 h-28' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
-                    <div><img className='max-w-xs w-40 h-28' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
+                    <div><img className='max-w-xs w-64 h-24' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
+                    <div><img className='max-w-xs w-40 h-24' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
                 </div>
             </div>
-        <Footer />
+            <Footer />
         </>
     )
 };

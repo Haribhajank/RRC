@@ -35,10 +35,10 @@ function Footer() {
                     <div className='flex-cols'>
                         <div className='mb-4'>Meet the Team</div>
                         <div className='mb-8'>
-                            <div><a href='#'>Events Team</a></div>
-                            <div><a href='#'>Corporate Team</a></div>
-                            <div><a href='#'>Creatives Team</a></div>
-                            <div><a href='#'>Club Members</a></div>
+                            <Link to='/events'><div>Events Team</div></Link>
+                            <Link to='/corporate'><div>Corporate Team</div></Link>
+                            <Link to='creatives'><div>Creatives Team</div></Link>
+                            <Link to=''><div>Club Members</div></Link>
                         </div>
                     </div>
                 </div>

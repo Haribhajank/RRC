@@ -12,6 +12,9 @@ import Contact from '../src/Pages/Contact';
 import Nav from '../src/Components/Nav';
 import Footer from '../src/Components/Footer';
 import { Switch } from '@headlessui/react';
+import Corporate from './Pages/Corporate';
+import Creatives from './Pages/Creatives';
+import Events from './Pages/Events';
 
 function App () { 
   return (
@@ -24,6 +27,9 @@ function App () {
           <Route path="/formfill" element={<Formfill />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/corporate" element={<Corporate />} />
+          <Route path="/creatives" element={<Creatives />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
     </BrowserRouter>
   );

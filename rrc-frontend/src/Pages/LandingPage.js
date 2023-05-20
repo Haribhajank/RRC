@@ -177,10 +177,13 @@ function Hero() {
                             </div>
                             <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>Participant</div>
-                                <div>Participation certificates from iitg robotics club.<br></br>
-                                    Free bootcamp course of robotics club worth 200 Rs.<br></br>
-                                    Commercial Grade License from ALTAIR<br></br>
-                                    Fee 3 month subscription of THE HINDU e-paper worth 249/month.
+                                <div>
+                                <ul>
+                                    <li>&bull; Participation certificates from iitg robotics club.</li>
+                                    <li>&bull; Free bootcamp course of robotics club worth 200 Rs.</li>
+                                    <li>&bull; Commercial Grade License from ALTAIR.</li>
+                                    <li>&bull; Fee 3 month subscription of THE HINDU e-paper worth 249/month.</li>
+                                </ul>
                                 </div>
                             </div>
                         </div>

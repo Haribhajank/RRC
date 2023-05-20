@@ -25,7 +25,7 @@ import Footer2 from '../Components/Footer2';import { Link } from 'react-router-d
                 </div>
             </div>
             {/* Form */}
-            <div className='my-10 py-10'>
+            {/* <div className='my-10 py-10'>
                 <div className='lg:mx-72 mx-24 justify-center align-center'>
                     <form >
                         <label><span className='text-red-600'>*</span>State </label><br />
@@ -51,7 +51,7 @@ import Footer2 from '../Components/Footer2';import { Link } from 'react-router-d
                         <Link to="/form3"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Next </button></Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <Footer2 />
         </>
     )

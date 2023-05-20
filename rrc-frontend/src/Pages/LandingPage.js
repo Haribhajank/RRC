@@ -179,8 +179,8 @@ function Hero() {
                                 <div className='text-2xl mb-4'>Participant</div>
                                 <div>Participation certificates from iitg robotics club.<br></br>
                                     Free bootcamp course of robotics club worth 200 Rs.<br></br>
-                                    Commercial Grade License from XXX<br></br>
-                                    Fee 3 month subscription of XXX e-paper worth 249/month.
+                                    Commercial Grade License from ALTAIR<br></br>
+                                    Fee 3 month subscription of THE HINDU e-paper worth 249/month.
                                 </div>
                             </div>
                         </div>

@@ -158,38 +158,41 @@ function Hero() {
                 </div> */}
 
                 <div className='lg:mx-auto mx-16 max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
-                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
+                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 opacity-50 hover:opacity-100'>
                         <div className='text-2xl mb-4'>1st Prize</div>
                         <div><img className='my-2 max-w-md h-60 w-60' src={require('../images/image 95.png')}></img></div>
                         <div>The winner of the competition will be awarded with a macbook</div>
                     </div>
                     <div className='md:grid md:col-span-3 md:row-2 lg:grid lg:col-span-3 lg:row-2 '>
                         <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-3 gap-4'>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>2nd Prize</div>
                                 <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80' src={require("../images/image-removebg-preview (2).png")}></img></div>
                                 <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                             </div>
-                            <div className='flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3'>
+                            <div className='flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3 opacity-50 hover:opacity-100'>
                                  <div className='text-2xl mb-4'>3rd Prize</div>
                                  <div><img className='my-0 max-w-md h-52 w-60 py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
                                 <div>Have a chance to win Alexa dot</div>
                             </div>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>Participant</div>
-                                <div>Participation certificates from iitg robotics club.<br></br>
-                                     Free bootcamp course of robotics club worth 200 Rs.<br></br>
-                                     Commercial Grade License from XXX<br></br>
-                                     Fee 3 month subscription of XXX e-paper worth 249/month.
+                                <div>
+                                <ul>
+                                    <li>&bull; Participation certificates from iitg robotics club.</li>
+                                     <li>&bull; Free bootcamp course of robotics club worth 200 Rs.</li>
+                                     <li>&bull; Commercial Grade License from ALTAIR.</li>
+                                     <li>&bull; Free 3 month subscription of THE HINDU e-paper worth 249/month.</li>
+                                </ul>
                                 </div>
                             </div>
                         </div>
                         <div className=' md:grid md:grid-cols-2 md:col-span-3 lg:grid lg:grid-cols-2 lg:col-span-3 gap-4 mt-4'>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 opacity-50 hover:opacity-100'>
                                 <div className='text-2xl mb-4'>Top 10 Teams</div>
                                 <div>Get a chance to visit Robotics club IITG</div>
                             </div>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 opacity-50 hover:opacity-100'>
 
                                 <div className='text-2xl mb-4'>Top 10% teams</div>
                                 <div>Will be featured on our social media channels</div>
@@ -204,16 +207,14 @@ function Hero() {
             {/* Sponsor */}
             <div className=''>
                 <div>
-                    <div className='flex justify-center align-center text-2xl font-black my-10 '>Previous Sponsors</div>
+                    <div className='flex justify-center align-center text-2xl font-black my-20 '>Our Sponsors</div>
                     {/* <div className='flex justify-center align-center mb-10 text-center'>(Maximum 25 points):<br></br>
                         The video simulation should be 10 minutes long.
                     </div> */}
                 </div>
-                <div className='flex mx-20 flex-wrap justify-center align-center  gap-8 mx-auto mb-20'>
-                    <div><img className='max-w-xs w-72 h-44' src={require('../images/microchip-1-logo-png-transparent.png')}></img></div>
-                    <div><img className='max-w-xs pt-4 mt-2 md:max-w-md md:w-80 md:h-40 lg:max-w-md lg:w-80 lg:h-40' src={require('../images/Coincent_PNG.png')}></img></div>
-                    <div><img className='max-w-xs w-60 h-44' src={require('../images/vertical-colored.png')}></img></div>
-                    {/* <div><img src={require('../images/Rectangle 8.png')}></img></div> */}
+                <div className='flex mx-20 flex-wrap justify-center align-center  gap-20 mx-auto mb-20'>
+                    <div><img className='max-w-xs w-64 h-28' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
+                    <div><img className='max-w-xs w-40 h-28' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
                 </div>
             </div>
         <Footer />

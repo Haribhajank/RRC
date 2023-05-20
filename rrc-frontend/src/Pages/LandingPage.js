@@ -11,7 +11,7 @@ function Hero() {
          {/* Head Image */}
             <div className='flex justify-center flex-wrap my-10'>
                 <div className='lg:ml-40 mt-10  justify-center ml-20'>
-                    <img className='h-3/4  mr-0'  src={require('../images/Abstraction.png')}></img>
+                    <img className='h-3/4  mr-0 lg:hover:animate-pulse'  src={require('../images/Abstraction.png')}></img>
                 </div>
                 <div className='lg:flex-1 lg:mr-20 lg:mt-20 justify-center align-center  px-10'>
                     <img className='' src={require('../images/RECYCLOTRON ROBOTICS CHALLENGE.png')}></img>
@@ -38,10 +38,10 @@ function Hero() {
                         <div className='flex lg:justify-left flex-wrap flex-col mb-10 text-2xl font-black max-[1220px]:my-2'><h1>1. Understand the Problem</h1></div>
                         <div className='lg:justify-left flex-wrap flex-col w-96 max-[1220px]:w-80 '>The main problem that needs to be addressed in designing a best-out-of-waste project is to create a product that is functional, aesthetically pleasing, and eco-friendly. The design should be innovative and cost-effective and use readily available waste materials.</div>
                     </div>
-                    <div className='flex lg:justify-right flex-wrap lg:ml-32 max-[1220px]:ml-0'><img src={require('../images/image_99-removebg-preview-removebg-preview.png')}></img></div>
+                    <div className='flex lg:justify-right flex-wrap lg:ml-32 max-[1220px]:ml-0'><img className='lg:hover:animate-bounce' src={require('../images/image_99-removebg-preview-removebg-preview.png')}></img></div>
                 </div>
                 <div className='flex flex-1 flex-wrap flex-row mt-5 max-[1220px]:flex-col max-[1220px]:items-center '>
-                    <div className='flex flex-wrap lg:ml-60 max-[1220px]:items-center'><img src={require('../images/image_100-removebg-preview-removebg-preview.png')}></img></div>
+                    <div className='flex flex-wrap lg:ml-60 max-[1220px]:items-center'><img className='lg:hover:animate-bounce' src={require('../images/image_100-removebg-preview-removebg-preview.png')}></img></div>
                     <div className='flex flex-wrap flex-col lg:ml-20'>
                         <div className='flex lg:justify-right  flex-wrap flex-col mb-10 text-2xl font-black max-[1220px]:my-2'><h1>2. Look out for usefull scrap</h1></div>
                         <div className='flex lg:justify-right flex-wrap flex-col w-96 max-[1220px]:w-80'>In order to make the robot you want, you need to list down the thing your need and starts looking for it around your house. You can buy things like batteries and motors from stores</div>
@@ -52,10 +52,10 @@ function Hero() {
                         <div className='flex lg:justify-left flex-wrap flex-col mb-10 text-2xl font-black max-[1220px]:my-2'><h1>3. Build it up !!</h1></div>
                         <div className='lg:justify-left flex-wrap flex-col w-96 max-[1220px]:w-80'>Start thinking on how you will be making the robot with the scraps and useful items you found. A proper working robot model would be your target</div>
                     </div>
-                    <div className='flex lg:justify-right flex-wrap lg:ml-32'><img src={require('../images/image_99-removebg-preview-removebg-preview (1).png')}></img></div>
+                    <div className='flex lg:justify-right flex-wrap lg:ml-32'><img className='lg:hover:animate-bounce' src={require('../images/image_99-removebg-preview-removebg-preview (1).png')}></img></div>
                 </div>
                 <div className='flex flex-1 flex-wrap flex-row mt-5 max-[1220px]:flex-col max-[1220px]:items-center '>
-                    <div className='flex flex-wrap lg:ml-60'><img src={require('../images/image_101-removebg-preview-removebg-preview.png')}></img></div>
+                    <div className='flex flex-wrap lg:ml-60'><img className='lg:hover:animate-bounce' src={require('../images/image_101-removebg-preview-removebg-preview.png')}></img></div>
                     <div className='flex flex-wrap flex-col lg:ml-20 '>
                         <div className='flex lg:justify-right  flex-wrap flex-col mb-10 text-2xl font-black max-[1220px]:my-2'><h1>4. Submit and win prizes</h1></div>
                         <div className='flex lg:justify-right flex-wrap flex-col w-96 max-[1220px]:w-80'>IIT Guwahati students will be judging your projects. There are a lot of prizes and exciting things to wins from this competition, so give your best to win this</div>
@@ -70,7 +70,7 @@ function Hero() {
 
             {/* Challenges */}
             <div className='lg:grid mx-0 lg:gap-20 justify-center align-center h-auto lg:h-screen flex-wrap lg:grid-cols-2'>
-                <div className='mb-10 lg:my-60 mx-20'>
+                <div className='mb-10 lg:my-60 mx-auto px-10'>
                     <div className='mt-16 lg:text-6xl text-4xl font-black f pb-5'>
                         Several Key Challenges
                     </div>
@@ -111,9 +111,9 @@ function Hero() {
 
 
             {/* Instruction */}
-            <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20  flex-wrap' >
+            <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20  flex-wrap mx-auto' >
                 <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Instructions</div>
-                <div className='px-16'><b>1.Each team should submit a video </b>(Maximum 25 points):
+                <div className='px-10'><b>1.Each team should submit a video </b>(Maximum 25 points):
                     <br></br>The video simulation should be 10 minutes long.
                     The video should demonstrate a complete description of the robot and its working.
                     The team members should always be visible in front of the camera.<br></br><br></br>
@@ -139,7 +139,7 @@ function Hero() {
             <div className='p-5 w-auto flex flex-col justify-center align-center mt-32 mb-40 lg:px-52 flex-wrap'>
                 <div className='flex  align-center text-4xl font-black mb-10 f'>Prizes and Rewards</div>
 
-                <div className='flex mx-auto flex-wrap justify-center align-center gap-2 mb-10 mx-auto  max-w-7xl md:grid md:-cols-3 lg:grid gap-2 lg:grid-cols-3'>
+                {/* <div className='flex mx-auto flex-wrap justify-center align-center gap-2 mb-10 mx-auto  max-w-7xl md:grid md:-cols-3 lg:grid gap-2 lg:grid-cols-3'>
                     <div className='bg-gradient-to-r from-blue-500 to-blue-200 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
                         <div className='text-2xl '>1st Prize</div>
                         <div><img className='my-4 max-w-md h-80 w-80' src={require('../images/image 95.png')}></img></div>
@@ -155,40 +155,48 @@ function Hero() {
                         <div><img className='my-4 max-w-md h-80 w-80 py-10 px-4 opacity-60' src={require("../images/image 103.png")}></img></div>
                         <div>Have a chance to get win Alexa dot</div>
                     </div>
-                </div>
+                </div> */}
 
-                {/* <div className='mx-auto  max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
-                    <div className='bg-gradient-to-r from-blue-500 to-blue-400 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
-                        <div>1st Prize</div>
+                <div className='lg:mx-auto mx-16 max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
+                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
+                        <div className='text-2xl mb-4'>1st Prize</div>
+                        <div><img className='my-2 max-w-md h-60 w-60' src={require('../images/image 95.png')}></img></div>
                         <div>The winner of the competition will be awarded with a macbook</div>
                     </div>
                     <div className='md:grid md:col-span-3 md:row-2 lg:grid lg:col-span-3 lg:row-2 '>
-                        <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-4 gap-4'>
-                            <div className='bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
-                                <div>1st Prize</div>
-                                <div>The winner of the competition will be awarded with a macbook</div>
+                        <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-3 gap-4'>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
+                                <div className='text-2xl mb-4'>2nd Prize</div>
+                                <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80' src={require("../images/image-removebg-preview (2).png")}></img></div>
+                                <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                             </div>
-                            <div className='bg-gradient-to-r from-blue-300 to-green-300 col-span-2 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3'>
-                                 <div>1st Prize</div>
-                                <div>The winner of the competition will be awarded with a macbook</div>
+                            <div className='flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3'>
+                                 <div className='text-2xl mb-4'>3rd Prize</div>
+                                 <div><img className='my-0 max-w-md h-52 w-60 py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
+                                <div>Have a chance to win Alexa dot</div>
                             </div>
-                            <div className='bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
-                                <div>1st Prize</div>
-                                <div>The winner of the competition will be awarded with a macbook</div>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3'>
+                                <div className='text-2xl mb-4'>Participant</div>
+                                <div>Participation certificates from iitg robotics club.<br></br>
+                                     Free bootcamp course of robotics club worth 200 Rs.<br></br>
+                                     Commercial Grade License from XXX<br></br>
+                                     Fee 3 month subscription of XXX e-paper worth 249/month.
+                                </div>
                             </div>
                         </div>
                         <div className=' md:grid md:grid-cols-2 md:col-span-3 lg:grid lg:grid-cols-2 lg:col-span-3 gap-4 mt-4'>
-                            <div className='bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
-                                <div>1st Prize</div>
-                                <div>The winner of the competition will be awarded with a macbook</div>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
+                                <div className='text-2xl mb-4'>Top 10 Teams</div>
+                                <div>Get a chance to visit Robotics club IITG</div>
                             </div>
-                            <div className='bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
-                                    <div>1st Prize</div>
-                                    <div>The winner of the competition will be awarded with a macbook</div>
+                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3'>
+
+                                <div className='text-2xl mb-4'>Top 10% teams</div>
+                                <div>Will be featured on our social media channels</div>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
 
 
@@ -201,10 +209,10 @@ function Hero() {
                         The video simulation should be 10 minutes long.
                     </div> */}
                 </div>
-                <div className='flex mx-20 flex-wrap justify-center align-center  gap-8 lg:ml-20 mb-20'>
-                    <div><img className='max-w-xs w-72 h-52' src={require('../images/microchip-1-logo-png-transparent.png')}></img></div>
-                    <div><img className='max-w-xs md:max-w-md md:w-88 md:h-52 lg:max-w-md lg:w-88 lg:h-52' src={require('../images/Coincent_PNG.png')}></img></div>
-                    <div><img className='max-w-xs w-60 h-52' src={require('../images/vertical-colored.png')}></img></div>
+                <div className='flex mx-20 flex-wrap justify-center align-center  gap-8 mx-auto mb-20'>
+                    <div><img className='max-w-xs w-72 h-44' src={require('../images/microchip-1-logo-png-transparent.png')}></img></div>
+                    <div><img className='max-w-xs pt-4 mt-2 md:max-w-md md:w-80 md:h-40 lg:max-w-md lg:w-80 lg:h-40' src={require('../images/Coincent_PNG.png')}></img></div>
+                    <div><img className='max-w-xs w-60 h-44' src={require('../images/vertical-colored.png')}></img></div>
                     {/* <div><img src={require('../images/Rectangle 8.png')}></img></div> */}
                 </div>
             </div>

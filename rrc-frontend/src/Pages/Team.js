@@ -21,7 +21,7 @@ function Team () {
                         </div>
                     </div>
                 </div>
-                <div className='lg:mx-40 mx-16 justify-center align-center my-10 py-10'>
+                <div className='lg:mx-40 mx-auto px-10 justify-center align-center my-10 py-10'>
                     <div>
                         <div className='mb-5 text-4xl'>Robotics Enthusiasts</div>
                         <div>Welcome to the Robotics Club at IITG !

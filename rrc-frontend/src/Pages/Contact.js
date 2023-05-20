@@ -19,7 +19,7 @@ function Contact () {
                     </div>
                 </div>
             </div>
-            <div className=' lg:mx-40 mx-24 justify-center align-center my-10  py-10 z-10'>
+            <div className=' lg:mx-40 mx-auto px-10 justify-center align-center my-10  py-10 z-10'>
                 {/* <div className='text-4xl mb-5'>Events team</div>
                 <div className='flex flex-wrap justify-center align-center lg:gap-52 gap-10 md:gap-32 mb-10 mt-10'>
                     <div>

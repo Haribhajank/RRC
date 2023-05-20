@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 .f {
     background: linear-gradient(90deg, #26285D -0.95%, #3BAFD1 100.83%);
     -webkit-background-clip: text;

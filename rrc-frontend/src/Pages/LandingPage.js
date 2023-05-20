@@ -136,8 +136,8 @@ function Hero() {
 
 
             {/* Prizes */}
-            <div className='p-5 w-auto flex flex-col justify-center align-center mt-32 mb-40 lg:px-52 flex-wrap'>
-                <div className='flex  align-center text-4xl font-black mb-10 f'>Prizes and Rewards</div>
+            <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20 flex-wrap mx-auto'>
+                <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Prizes and Rewards</div>
 
                 {/* <div className='flex mx-auto flex-wrap justify-center align-center gap-2 mb-10 mx-auto  max-w-7xl md:grid md:-cols-3 lg:grid gap-2 lg:grid-cols-3'>
                     <div className='bg-gradient-to-r from-blue-500 to-blue-200 grid col-span-1  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100'>
@@ -204,7 +204,7 @@ function Hero() {
             {/* Sponsor */}
             <div className=''>
                 <div>
-                    <div className='flex justify-center align-center text-2xl font-black mb-10 text-2xl'>Previous Sponsors</div>
+                    <div className='flex justify-center align-center text-2xl font-black my-10 '>Previous Sponsors</div>
                     {/* <div className='flex justify-center align-center mb-10 text-center'>(Maximum 25 points):<br></br>
                         The video simulation should be 10 minutes long.
                     </div> */}

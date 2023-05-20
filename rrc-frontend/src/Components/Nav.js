@@ -58,9 +58,11 @@ export default function Example() {
 
             </Transition>
           </Popover>           
-          <a className="px-4 py-1.5 hover:text-white hover:bg-green-400 rounded-full" href="/" >About</a>
-          <a href="team" className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Robotics Club</a>
-          <a href="contact" className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Contact Us</a>
+          <Link to='/'><div className="px-4 py-1.5 hover:text-white hover:bg-green-400 rounded-full"  >About</div></Link>
+          <Link to='/team'><div  className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Robotics Club</div></Link>
+          <Link to='/contact'><div  className="px-4 py-1.5 hover:text-white hover:bg-green-400 hover:rounded-full">Contact Us</div></Link>
+          
+          
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <Link to="/form1"><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register Now!</button></Link>
@@ -90,30 +92,27 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              <a
-                  href="/"
+                <Link to='/'><div
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
-                </a>
-                <a
-                  href="team"
+                </div></Link>
+                <Link to='/team'><div
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Robotics Club
-                </a>
+                </div></Link>
                 {/* <a
                   href="team"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Team
                 </a> */}
-                <a
-                  href="contact"
+                <Link to='/contact'><div
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </a>
+                </div></Link>
               </div>
             </div>
           </div>

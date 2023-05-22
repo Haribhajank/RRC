@@ -5,6 +5,15 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
 
 function Hero() {
+
+    const [hoverElement, setHoverElement] = useState(null);
+    const onHover = (elmnt) => {
+        setHoverElement(elmnt);
+    }
+    const outHover = (event) => {
+        setHoverElement(null);
+    }
+
     return (
         <>
             <Nav />
@@ -69,7 +78,9 @@ function Hero() {
 
 
             {/* Challenges */}
-            <div className='lg:grid mx-0 lg:gap-20 justify-center align-center h-auto lg:h-screen flex-wrap lg:grid-cols-2'>
+
+
+            <div className='lg:grid mx-0 lg:gap-20 justify-center align-center h-auto challenges flex-wrap lg:grid-cols-2 mt-6'>
                 <div className='mb-10 lg:my-60 mx-auto px-10'>
                     <div className='mt-16 lg:text-6xl text-4xl font-black f pb-5'>
                         Several Key Challenges
@@ -79,9 +90,9 @@ function Hero() {
                         Keeping these factor in mind, lets have a close look into them.The main problem that needs to be addressed in designing a best-out-of-waste project is to create a product that is functional, aesthetically pleasing, and eco-friendly.
                     </div>
                 </div>
-                <div className='bg-black text-white overflow-y-scroll'>
+                <div className='bg-black text-white overflow-y-scroll challenges__scroll overflow-x-clip'>
                     <div className='px-10 py-10'>
-                        <img className='mx-10 lg:ml-72 px-10' src={require('../images/processing 1.png')}></img></div>
+                        <img className='mx-10 lg:ml-72 object-contain px-10' src={require('../images/processing 1.png')}></img></div>
                     <div className='mx-24 text-2xl mt-10 font-black'>Material Selection:</div>
                     <div className='mt-5 mx-24'>IIT Guwahati students will be judging your projects. There are a lot   of prizes and exciting things to wins from this competition, so give your best to win this</div>
 
@@ -111,26 +122,27 @@ function Hero() {
 
 
             {/* Instruction */}
-            <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20  flex-wrap mx-auto' >
-                <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Instructions</div>
-                <div className='px-10'><b>1.Each team should submit a video </b>(Maximum 25 points):
-                    <br></br>The video simulation should be 10 minutes long.
-                    The video should demonstrate a complete description of the robot and its working.
-                    The team members should always be visible in front of the camera.<br></br><br></br>
+            <div>
+                <div className='flex flex-col justify-center align-center lg:px-60 mt-20 pt-20  flex-wrap mx-auto ' >
+                    <div className='flex justify-center align-center text-4xl font-black mb-10 f'>Instructions</div>
+                    <div className='px-10'><b>1.Each team should submit a video </b>(Maximum 25 points):
+                        <br></br>The video simulation should be 10 minutes long.
+                        The video should demonstrate a complete description of the robot and its working.
+                        The team members should always be visible in front of the camera.<br></br><br></br>
 
-                    <b>2.Report Submission</b> (Maximum 20 points):
-                    <br></br>The report should include a basic idea about model and design details, such as material choice, the calculation (if any), motor and sensor selection.<br></br><br></br>
-                    <u>Introduction</u>: Provide an overview of the project, its objectives, and the problem statement being addressed.<br></br><br></br>
-                    <u>Design</u>: Describe the design of the project, including the selection of waste materials, the design process, and the final product design.<br></br><br></br>
-                    <u>Functionality</u>: Explain how the project is functional and serves its intended purpose effectively.<br></br><br></br>
-                    <u>Technical proficiency</u> (maximum 25 points): The project should demonstrate technical proficiency in the selection of materials, construction techniques, and the use of tools and equipment.<br></br><br></br>
-                    *The use of motors, sensors, microcontrollers and other electronic equipment is allowed but the idea of utilizing waste should not be overlooked/ignored.<br></br><br></br>
+                        <b>2.Report Submission</b> (Maximum 20 points):
+                        <br></br>The report should include a basic idea about model and design details, such as material choice, the calculation (if any), motor and sensor selection.<br></br><br></br>
+                        <u>Introduction</u>: Provide an overview of the project, its objectives, and the problem statement being addressed.<br></br><br></br>
+                        <u>Design</u>: Describe the design of the project, including the selection of waste materials, the design process, and the final product design.<br></br><br></br>
+                        <u>Functionality</u>: Explain how the project is functional and serves its intended purpose effectively.<br></br><br></br>
+                        <u>Technical proficiency</u> (maximum 25 points): The project should demonstrate technical proficiency in the selection of materials, construction techniques, and the use of tools and equipment.<br></br><br></br>
+                        *The use of motors, sensors, microcontrollers and other electronic equipment is allowed but the idea of utilizing waste should not be overlooked/ignored.<br></br><br></br>
 
-                    <b>3.Use of waste materials</b> (maximum 10 points): The project should effectively utilize waste materials in a creative and eco-friendly way, reducing waste and promoting sustainability.<br></br><br></br>
+                        <b>3.Use of waste materials</b> (maximum 10 points): The project should effectively utilize waste materials in a creative and eco-friendly way, reducing waste and promoting sustainability.<br></br><br></br>
 
-                    <b>4.Creativity and uniqueness</b> (maximum 20 points): The project should demonstrate creativity and uniqueness using waste materials, design, and functionality.</div>
+                        <b>4.Creativity and uniqueness</b> (maximum 20 points): The project should demonstrate creativity and uniqueness using waste materials, design, and functionality.</div>
+                </div>
             </div>
-
 
 
 
@@ -156,43 +168,43 @@ function Hero() {
                         <div>Have a chance to get win Alexa dot</div>
                     </div>
                 </div> */}
-
+                {/* opacity-50 hover:opacity-100 */}
                 <div className='lg:mx-auto mx-16 max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
-                    <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 flex flex-col  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 opacity-50 hover:opacity-100'>
+                    <div onMouseEnter={() => onHover('prize__1')} onMouseLeave={outHover} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 flex flex-col  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 ${(hoverElement !== 'prize__1') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'} `}>
                         <div className='text-2xl mb-4'>1st Prize</div>
                         <div><img className='my-2' src={require('../images/image 95.png')}></img></div>
                         <div>The winner of the competition will be awarded with a macbook</div>
                     </div>
                     <div className='md:grid md:col-span-3 md:row-2 lg:grid lg:col-span-3 lg:row-2 '>
                         <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-3 gap-4'>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
+                            <div onMouseEnter={() => onHover('prize__2')} onMouseLeave={() => setHoverElement(null)} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 ${(hoverElement !== 'prize__2') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'} `}>
                                 <div className='text-2xl mb-4'>2nd Prize</div>
                                 <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80 object-contain' src={require("../images/image-removebg-preview (2).png")}></img></div>
                                 <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                             </div>
-                            <div className='flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3 opacity-50 hover:opacity-100'>
+                            <div onMouseEnter={() => onHover('prize__3')} onMouseLeave={() => setHoverElement(null)} className={`flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3 ${(hoverElement !== 'prize__3') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
                                 <div className='text-2xl mb-4'>3rd Prize</div>
                                 <div><img className='my-0  py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
                                 <div>Have a chance to win Alexa dot</div>
                             </div>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 opacity-50 hover:opacity-100'>
+                            <div onMouseEnter={() => onHover('prize__4')} onMouseLeave={() => setHoverElement(null)} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 ${(hoverElement !== 'prize__4') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
                                 <div className='text-2xl mb-4'>Participant</div>
                                 <div>
-                                <ul>
-                                    <li>&bull; Participation certificates from iitg robotics club.</li>
-                                    <li>&bull; Free bootcamp course of robotics club worth 200 Rs.</li>
-                                    <li>&bull; Commercial Grade License from ALTAIR.</li>
-                                    <li>&bull; Fee 3 month subscription of THE HINDU e-paper worth 249/month.</li>
-                                </ul>
+                                    <ul>
+                                        <li>&bull; Participation certificates from iitg robotics club.</li>
+                                        <li>&bull; Free bootcamp course of robotics club worth 200 Rs.</li>
+                                        <li>&bull; Commercial Grade License from ALTAIR.</li>
+                                        <li>&bull; Fee 3 month subscription of THE HINDU e-paper worth 249/month.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div className=' md:grid md:grid-cols-2 md:col-span-3 lg:grid lg:grid-cols-2 lg:col-span-3 gap-4 mt-4'>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 opacity-50 hover:opacity-100'>
+                            <div onMouseEnter={() => onHover('prize__5')} onMouseLeave={() => setHoverElement(null)} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 ${(hoverElement !== 'prize__5') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
                                 <div className='text-2xl mb-4'>Top 10 Teams</div>
                                 <div>Get a chance to visit Robotics club IITG</div>
                             </div>
-                            <div className='transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 opacity-50 hover:opacity-100'>
+                            <div onMouseEnter={() => onHover('prize__6')} onMouseLeave={() => setHoverElement(null)} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-green-300 to-green-500 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 ${(hoverElement !== 'prize__6') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
 
                                 <div className='text-2xl mb-4'>Top 10% teams</div>
                                 <div>Will be featured on our social media channels</div>

@@ -43,3 +43,11 @@
     width: 110%;
 }
 
+@media screen and (min-width: 1024px) {
+    .challenges{
+        height: 700px !important;
+    }
+}
+.challenges__scroll {
+    max-height: 800px;
+}

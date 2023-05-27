@@ -208,7 +208,18 @@ function Hero() {
 
                                 <div className='text-2xl mb-4'>Top 10% teams</div>
                                 <div>Will be featured on our social media channels</div>
+
                             </div>
+                        </div>
+                    </div>
+                    <div onMouseEnter={() => onHover('prize__7')} onMouseLeave={() => setHoverElement(null)} className={`lg:col-span-4 md:col-span-3 transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-green-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 ${(hoverElement !== 'prize__7') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
+                        <div className='text-2xl mb-4'>Benefits for the school</div>
+                        <div>
+                            <ul>
+                                <li>&bull; The winning school from each state will be featured on our Instagram, LinkedIn, and Facebook pages, which have a combined reach of 10,000 followers and is continually growing.</li>
+                                <li>&bull; The school with the highest participation from each city will be declared as our city partner for the following year. As a partner, they will receive perks such as free branding on our problem statement and invitations . Additionally, students from that school will receive free registration for the next year.</li>
+                                <li>&bull; Schools with participation of more than 20 teams will certificate from the IITG Robotics Club.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -227,6 +238,7 @@ function Hero() {
                 <div className='flex mx-20 flex-wrap justify-center align-center  gap-20 mx-auto mb-20'>
                     <div><img className='max-w-xs w-64 h-24' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
                     <div><img className='max-w-xs w-40 h-24' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
+                    <div><img className='max-w-xs w-60 h-24 p-2 bg-black' src={require('../images/techanalogy_logo.png')}></img></div>
                 </div>
             </div>
             <Footer />

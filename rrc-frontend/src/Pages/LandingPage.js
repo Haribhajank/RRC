@@ -67,7 +67,7 @@ function Hero() {
                     <div className='flex flex-wrap lg:ml-60'><img className='lg:hover:animate-bounce' src={require('../images/image_101-removebg-preview-removebg-preview.png')}></img></div>
                     <div className='flex flex-wrap flex-col lg:ml-20 '>
                         <div className='flex lg:justify-right  flex-wrap flex-col mb-10 text-2xl font-black max-[1220px]:my-2'><h1>4. Submit and win prizes</h1></div>
-                        <div className='flex lg:justify-right flex-wrap flex-col w-96 max-[1220px]:w-80'>IIT Guwahati students will be judging your projects. There are a lot of prizes and exciting things to wins from this competition, so give your best to win this</div>
+                        <div className='flex lg:justify-right flex-wrap flex-col w-96 max-[1220px]:w-80'> There are a lot of prizes and exciting things to wins from this competition, so give your best to win this</div>
                     </div>
                 </div>
             </div>
@@ -171,19 +171,22 @@ function Hero() {
                 {/* opacity-50 hover:opacity-100 */}
                 <div className='lg:mx-auto mx-16 max-w-7xl md:grid md:-cols-4 lg:grid gap-4 lg:grid-cols-4 '>
                     <div onMouseEnter={() => onHover('prize__1')} onMouseLeave={outHover} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-500 to-blue-400 flex flex-col  rounded-2xl border border-slate-200 hover:shadow-2xl py-4 px-3 h-100 ${(hoverElement !== 'prize__1') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'} `}>
-                        <div className='text-2xl mb-4'>1st Prize</div>
+                        <div className='text-2xl mb-2'>1st Prize</div>
+                        <div className='text-2xl'>Worth 100K</div>
                         <div><img className='my-2' src={require('../images/image 95.png')}></img></div>
                         <div>The winner of the competition will be awarded with a macbook</div>
+                        
                     </div>
                     <div className='md:grid md:col-span-3 md:row-2 lg:grid lg:col-span-3 lg:row-2 '>
                         <div className='md:grid md:grid-cols-4 lg:grid lg:grid-cols-3 gap-4'>
                             <div onMouseEnter={() => onHover('prize__2')} onMouseLeave={() => setHoverElement(null)} className={`transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-400 to-blue-300 justify-center align-center rounded-2xl border border-slate-200 hover:shadow-2xl  py-4 px-3 ${(hoverElement !== 'prize__2') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'} `}>
-                                <div className='text-2xl mb-4'>2nd Prize</div>
+                                <div className='text-2xl'>2nd Prize</div>
+                                <div className='text-2xl'>Worth 31K</div>
                                 <div className=''><img className='my-2 mx-auto max-w-md h-40 w-40 px-4 opacity-80 object-contain' src={require("../images/image-removebg-preview (2).png")}></img></div>
                                 <div>Opportunity to win Samsung Watch 5 for the 2nd winner</div>
                             </div>
                             <div onMouseEnter={() => onHover('prize__3')} onMouseLeave={() => setHoverElement(null)} className={`flex flex-wrap transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 duration-300 bg-gradient-to-r from-blue-300 to-green-300 col-span-1 rounded-2xl border border-slate-200 hover:shadow-lg  py-4 px-3 ${(hoverElement !== 'prize__3') && (hoverElement !== null) ? 'opacity-50' : 'opacity-100'}`}>
-                                <div className='text-2xl mb-4'>3rd Prize</div>
+                                <div className='text-2xl mb-4'>3rd Prize <br />Worth 5K</div>
                                 <div><img className='my-0  py-4 px-2 opacity-60' src={require("../images/image 103.png")}></img></div>
                                 <div>Have a chance to win Alexa dot</div>
                             </div>

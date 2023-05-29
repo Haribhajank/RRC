@@ -239,9 +239,8 @@ function Hero() {
                     </div> */}
                 </div>
                 <div className='flex mx-20 flex-wrap justify-center align-center  gap-20 mx-auto mb-20'>
-                    <div><img className='max-w-xs w-64 h-24' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
-                    <div><img className='max-w-xs w-40 h-24' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
-                    <div><img className='max-w-xs w-60 h-24 p-2 bg-black' src={require('../images/techanalogy_logo.png')}></img></div>
+                    <div><img className='max-w-xs w-64 h-24 object-contain' src={require('../images/Altair_Brandmark_Hz_RGB_FullColor.jpg')}></img></div>
+                    <div><img className='max-w-xs w-40 h-24 object-contain' src={require('../images/WhatsApp Image 2023-05-20 at 17.09.00.jpeg')}></img></div>
                 </div>
             </div>
             <Footer />

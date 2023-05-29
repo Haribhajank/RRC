@@ -15,6 +15,7 @@ import { Switch } from '@headlessui/react';
 import Corporate from './Pages/Corporate';
 import Creatives from './Pages/Creatives';
 import Events from './Pages/Events';
+import Success from './Pages/Success';
 
 function App () { 
   return (
@@ -30,6 +31,7 @@ function App () {
           <Route path="/corporate" element={<Corporate />} />
           <Route path="/creatives" element={<Creatives />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/Success" element={<Success />} />
         </Routes>
     </BrowserRouter>
   );
